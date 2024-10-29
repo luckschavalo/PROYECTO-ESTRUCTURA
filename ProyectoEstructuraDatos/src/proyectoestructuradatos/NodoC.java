@@ -4,7 +4,7 @@ package proyectoestructuradatos;
 
 public class NodoC {
     private String libro;
-    private NodoC atras; // Cambiar Reserva por NodoC
+    private NodoC atras; 
 
     public NodoC(String libro) {
         this.libro = libro;
@@ -16,11 +16,11 @@ public class NodoC {
     }
 
     public NodoC getAtras() {
-        return atras; // Debe retornar NodoC
+        return atras; 
     }
 
     public void setAtras(NodoC atras) {
-        this.atras = atras; // Debe aceptar NodoC
+        this.atras = atras; 
     }
 
     @Override
