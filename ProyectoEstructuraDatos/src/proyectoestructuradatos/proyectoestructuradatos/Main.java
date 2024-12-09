@@ -57,9 +57,6 @@ public class Main {
         System.out.println("Elementos de la lista: ");
         listac.mostrarLista();
 
-        System.out.println("Eliminando un elemento ");
-        listac.eliminar();
-
         System.out.println("Elementos de la lista despues de eliminar: ");
         listac.mostrarLista();
     }
