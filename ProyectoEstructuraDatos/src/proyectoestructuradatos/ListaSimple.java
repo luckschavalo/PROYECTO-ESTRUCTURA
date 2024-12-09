@@ -1,10 +1,6 @@
 
 package proyectoestructuradatos;
 
-/**
- *
- * @author David
- */
 public class ListaSimple {
     
     private NodoSimple cabeza;
@@ -40,13 +36,9 @@ public class ListaSimple {
         StringBuilder sb = new StringBuilder("Lista de libros: ");
         NodoSimple actual = cabeza;
         while (actual != null) {
-            sb.append(actual.getLibro()).append(" -> ");
+            sb.append(actual.getLibro()).append(" ");
             actual = actual.getSiguiente();
         }
         return sb.toString();
     }
-
-    
-    
-    
 }
