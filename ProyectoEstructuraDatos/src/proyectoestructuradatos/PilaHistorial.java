@@ -1,16 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package proyectoestructuradatos;
 
-/**
- *
- * @author fran1
- */
+
 public class PilaHistorial {
 
-    private NodoHistorial cima;
+   private NodoHistorial cima;
 
     public PilaHistorial() {
         cima = null;
