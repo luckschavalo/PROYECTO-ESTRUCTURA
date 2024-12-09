@@ -3,7 +3,7 @@ package proyectoestructuradatos;
 
 
 class ColaReservas {
-    private NodoC frente;
+   private NodoC frente;
     private NodoC ultimo;
 
     public ColaReservas() {
@@ -25,7 +25,7 @@ class ColaReservas {
 
     public String atender() {
         if (frente == null) {
-            System.out.println("No hay reservas pendientes.");
+            System.out.println("No hay reservas pendientes. ");
             return null;
         }
 
@@ -40,7 +40,7 @@ class ColaReservas {
     }
 
     public String toString() {
-        StringBuilder sb = new StringBuilder("Cola de Reservas: ");
+        StringBuilder sb = new StringBuilder("Cola de reservas: ");
         NodoC actual = frente;
         while (actual != null) {
             sb.append(actual.getLibro()).append(" ");
@@ -49,6 +49,3 @@ class ColaReservas {
         return sb.toString();
     }
 }
-
-    
-
