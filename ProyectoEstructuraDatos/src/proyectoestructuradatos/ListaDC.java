@@ -1,10 +1,6 @@
 
 package proyectoestructuradatos;
 
-/**
- *
- * @author David
- */
 public class ListaDC {
     private NodoDC cabeza;
 
