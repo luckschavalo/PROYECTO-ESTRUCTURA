@@ -4,6 +4,20 @@ package proyectoestructuradatos;
 
 public class Main {
     public static void main(String[] args) {
+        ListaSimple ls = new ListaSimple();
+        ls.agregarLibro("Don Quijote");
+        ls.agregarLibro("Matar a un ruiseñor");
+        System.out.println(ls.toString());
+        ls.eliminarLibro();
+        System.out.println("Lista después de eliminar un libro: " + ls.toString());
+        
+        ListaDC ldc = new ListaDC();
+        ldc.agregarLibro("Frankenstein");
+        ldc.agregarLibro("Drácula");
+        System.out.println(ldc.toString());
+        ldc.eliminarLibro();
+        System.out.println("Lista Doble Circular después de eliminar un libro: " + ldc.toString());
+        
         ColaReservas cola = new ColaReservas();
 
         cola.encolar("El Principito");
