@@ -24,7 +24,7 @@ public class PilaHistorial {
 
     public String eliminarDelHistorial() {
         if (cima == null) {
-            System.out.println("El historial está vacío.");
+            System.out.println("El historial esta vacio.");
             return null;
         }
         String libro = cima.getLibro();
