@@ -1,10 +1,7 @@
 
 package proyectoestructuradatos;
 
-/**
- *
- * @author David
- */
+
 public class NodoDC {
     private String libro;
     private NodoDC siguiente;
