@@ -29,7 +29,7 @@ public class ListaDC {
 
     public String eliminarLibro() {
         if (cabeza == null) {
-            System.out.println("La lista doble circular está vacía.");
+            System.out.println("La lista doble circular esta vacia.");
             return null;
         }
 
@@ -50,17 +50,17 @@ public class ListaDC {
     @Override
     public String toString() {
         if (cabeza == null) {
-            return "Lista doble circular vacía.";
+            return "Lista doble circular vacia.";
         }
 
         StringBuilder sb = new StringBuilder("Lista Doble Circular de Libros: ");
         NodoDC actual = cabeza;
         do {
-            sb.append(actual.getLibro()).append(" <-> ");
+            sb.append(actual.getLibro()).append(" ");
             actual = actual.getSiguiente();
         } while (actual != cabeza);
         
-        sb.setLength(sb.length() - 4);  // Eliminar el último "<->"
+        sb.setLength(sb.length() - 4);  
         return sb.toString();
     }
 }
