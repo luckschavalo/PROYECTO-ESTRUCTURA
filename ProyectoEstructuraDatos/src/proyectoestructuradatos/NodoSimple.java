@@ -1,8 +1,7 @@
-
 package proyectoestructuradatos;
 
-
 public class NodoSimple {
+
     private String libro;
     private NodoSimple siguiente;
 
@@ -22,7 +21,5 @@ public class NodoSimple {
     public void setSiguiente(NodoSimple siguiente) {
         this.siguiente = siguiente;
     }
-    
-    
-    
+
 }
