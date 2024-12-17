@@ -1,8 +1,8 @@
-
 package proyectoestructuradatos;
 
 public class ListaC {
-  private NodoLC ultimo; 
+
+    private NodoLC ultimo;
 
     public ListaC() {
         this.ultimo = null;
@@ -13,18 +13,17 @@ public class ListaC {
     }
 
     public void agregar(String dato) {
-        NodoLC nuevo = new NodoLC (dato);
+        NodoLC nuevo = new NodoLC(dato);
 
         if (estaVacia()) {
             ultimo = nuevo;
-            ultimo.setSiguiente(ultimo); 
+            ultimo.setSiguiente(ultimo);
         } else {
-            nuevo.setSiguiente(ultimo.getSiguiente()); 
-            ultimo.setSiguiente(nuevo); 
-            ultimo = nuevo; 
+            nuevo.setSiguiente(ultimo.getSiguiente());
+            ultimo.setSiguiente(nuevo);
+            ultimo = nuevo;
         }
     }
-
 
     public void mostrarLista() {
         if (estaVacia()) {
@@ -32,11 +31,11 @@ public class ListaC {
             return;
         }
 
-        NodoLC actual = ultimo.getSiguiente(); 
+        NodoLC actual = ultimo.getSiguiente();
         do {
             System.out.print(actual.getDato() + " ");
             actual = actual.getSiguiente();
-        } while (actual != ultimo.getSiguiente()); 
+        } while (actual != ultimo.getSiguiente());
 
         System.out.println("circular. ");
     }
@@ -47,10 +46,10 @@ public class ListaC {
             return;
         }
 
-        if (ultimo.getSiguiente() == ultimo) { 
+        if (ultimo.getSiguiente() == ultimo) {
             ultimo = null;
         } else {
-            ultimo.setSiguiente(ultimo.getSiguiente().getSiguiente()); 
+            ultimo.setSiguiente(ultimo.getSiguiente().getSiguiente());
         }
     }
 }
