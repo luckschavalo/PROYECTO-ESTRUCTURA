@@ -1,5 +1,5 @@
 
-package arbolbinario1;
+package proyectoestructuradatos;
 
 public class NodoArbol {
     
