@@ -1,15 +1,16 @@
-
 package proyectoestructuradatos;
 
 public class ListaDC {
+
     private NodoDC cabeza;
 
     public ListaDC() {
-        cabeza= null;
+        cabeza = null;
     }
+
     public void agregarLibro(String libro) {
         NodoDC nuevoNodo = new NodoDC(libro);
-        
+
         if (cabeza == null) {
             cabeza = nuevoNodo;
             nuevoNodo.setSiguiente(cabeza);
@@ -55,10 +56,8 @@ public class ListaDC {
             sb.append(actual.getLibro()).append(" ");
             actual = actual.getSiguiente();
         } while (actual != cabeza);
-        
-        sb.setLength(sb.length() - 4);  
+
+        sb.setLength(sb.length() - 4);
         return sb.toString();
     }
 }
-    
-
