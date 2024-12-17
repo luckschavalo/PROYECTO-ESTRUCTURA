@@ -1,11 +1,10 @@
-
 package proyectoestructuradatos;
 
 public class NodoArbol {
-    
-    private Libro libro; 
-    private NodoArbol izquierda; 
-    private NodoArbol derecha; 
+
+    private Libro libro;
+    private NodoArbol izquierda;
+    private NodoArbol derecha;
 
     public NodoArbol(Libro libro) {
         this.libro = libro;
