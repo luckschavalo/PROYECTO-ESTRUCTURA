@@ -1,8 +1,7 @@
-
 package proyectoestructuradatos;
 
-
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("Lista simple\n");
         ListaSimple ls = new ListaSimple();
@@ -11,7 +10,7 @@ public class Main {
         System.out.println(ls.toString());
         ls.eliminarLibro();
         System.out.println("Lista despues de eliminar un libro: " + ls.toString());
-        
+
         System.out.println("Lista Doble circular\n");
         ListaDC ldc = new ListaDC();
         ldc.agregarLibro("Frankenstein ");
@@ -19,7 +18,7 @@ public class Main {
         System.out.println(ldc.toString());
         ldc.eliminarLibro();
         System.out.println("Lista Doble Circular despues de eliminar un libro: " + ldc.toString());
-        
+
         System.out.println("Colas\n");
         ColaReservas cola = new ColaReservas();
         cola.encolar("El Principito ");
@@ -48,7 +47,7 @@ public class Main {
         System.out.println("Libro eliminado del historial: " + libroEliminado);
 
         System.out.println("Historial actualizado de libros prestados:\n" + historial.toString());
-        
+
         System.out.println("Lista Circular\n");
         ListaC listac = new ListaC();
         listac.agregar("Don Quijote");
@@ -58,8 +57,7 @@ public class Main {
         listac.mostrarLista();
         System.out.println("Elementos de la lista despues de eliminar: ");
         listac.mostrarLista();
-        
-        
+
         System.out.println("Recursividad\n");
         PosicionR pos1 = new PosicionR(1, 1, "El Principito");
         PosicionR pos2 = new PosicionR(2, 3, "Cien Anios de Soledad");
@@ -68,37 +66,18 @@ public class Main {
         PosicionR pos5 = new PosicionR(4, 5, "Frankenstein");
         PosicionR pos6 = new PosicionR(5, 1, "Dracula");
 
-        PosicionR[] posiciones = { pos1, pos2, pos3, pos4, pos5, pos6 };
+        PosicionR[] posiciones = {pos1, pos2, pos3, pos4, pos5, pos6};
 
         BusquedaRecursiva busqueda = new BusquedaRecursiva();
 
         ArbolBinario a = new ArbolBinario();
-        a.insertar(new Libro("La Odisea","Homero",112830983));
-        a.insertar(new Libro("Los Hornos de Hitler","Olga Lengyel",289381083));
-        a.insertar(new Libro("Habitos Atomicos","James Clear",345381083));
-        a.insertar(new Libro("Hamlet","William Shakespeare",567381083));
-        
+        a.insertar(new Libro("La Odisea", "Homero", 112830983));
+        a.insertar(new Libro("Los Hornos de Hitler", "Olga Lengyel", 289381083));
+        a.insertar(new Libro("Habitos Atomicos", "James Clear", 345381083));
+        a.insertar(new Libro("Hamlet", "William Shakespeare", 567381083));
+
         System.out.println("Libros en Orden: ");
         a.imprimirOrden();
-        System.out.println("\n");
-
-        System.out.println("**BUSCAR LIBRO EXISTENTE**");
-        String tituloBuscar = "La Odisea";
-        Libro libroEncontrar = a.buscar(tituloBuscar);
-        if(libroEncontrar != null){
-            System.out.println("Libro Encontrado: " + libroEncontrar);
-        }else{
-            System.out.println("Libro No Encontrado");
-        }
-        System.out.println("\n");
-
-        System.out.println("**BUSCAR LIBRO NO EXISTENTE**");
-        String TituloNoExiste = "Berserk";
-        Libro libroNoEncontrar = a.buscar(TituloNoExiste);
-        if (libroNoEncontrar != null){ 
-        }else{
-            System.out.println("Libro No Encontrado: " + TituloNoExiste);
-        }
         System.out.println("\n");
 
         // Aca se pone el nombre del libro que se desea buscar
@@ -112,4 +91,3 @@ public class Main {
         }
     }
 }
-    
