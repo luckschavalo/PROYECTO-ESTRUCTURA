@@ -1,13 +1,12 @@
-
 package proyectoestructuradatos;
 
-
 public class NodoDC {
+
     private String libro;
     private NodoDC siguiente;
     private NodoDC anterior;
-    
- public NodoDC(String libro) {
+
+    public NodoDC(String libro) {
         this.libro = libro;
         this.siguiente = null;
         this.anterior = null;
@@ -37,6 +36,4 @@ public class NodoDC {
         this.anterior = anterior;
     }
 
-
-    
 }
