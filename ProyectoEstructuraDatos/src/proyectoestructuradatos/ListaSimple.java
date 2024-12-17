@@ -1,13 +1,13 @@
-
 package proyectoestructuradatos;
 
 public class ListaSimple {
-    
+
     private NodoSimple cabeza;
 
     public ListaSimple() {
         cabeza = null;
     }
+
     public void agregarLibro(String libro) {
         NodoSimple nuevoNodo = new NodoSimple(libro);
         if (cabeza == null) {
@@ -31,7 +31,7 @@ public class ListaSimple {
         return libroEliminado;
     }
 
-  @Override
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Lista de libros: ");
         NodoSimple actual = cabeza;
