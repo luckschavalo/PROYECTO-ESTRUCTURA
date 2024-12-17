@@ -1,4 +1,3 @@
-
 package proyectoestructuradatos;
 
 public class NodoHistorial {
