@@ -1,14 +1,13 @@
-
 package proyectoestructuradatos;
 
-
 public class NodoC {
+
     private String libro;
-    private NodoC atras; 
+    private NodoC atras;
 
     public NodoC(String libro) {
         this.libro = libro;
-        this.atras = null;  
+        this.atras = null;
     }
 
     public String getLibro() {
@@ -16,11 +15,11 @@ public class NodoC {
     }
 
     public NodoC getAtras() {
-        return atras; 
+        return atras;
     }
 
     public void setAtras(NodoC atras) {
-        this.atras = atras; 
+        this.atras = atras;
     }
 
     @Override
