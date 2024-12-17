@@ -1,10 +1,8 @@
-
 package proyectoestructuradatos;
-
 
 public class PilaHistorial {
 
-   private NodoHistorial cima;
+    private NodoHistorial cima;
 
     public PilaHistorial() {
         cima = null;
