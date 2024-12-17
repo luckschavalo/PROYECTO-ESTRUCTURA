@@ -1,5 +1,5 @@
 
-package arbolbinario1;
+package proyectoestructuradatos;
 
 public class Libro {
     
@@ -39,6 +39,6 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", Id=" + Id + '}';
+        return "Libro: " + "titulo: " + titulo + " autor: " + autor + " Id: " + Id ;   
     }
 }
