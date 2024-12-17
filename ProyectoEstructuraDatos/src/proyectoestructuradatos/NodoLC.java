@@ -1,9 +1,9 @@
-
 package proyectoestructuradatos;
 
 public class NodoLC {
+
     private String dato;
-    private NodoLC siguiente; 
+    private NodoLC siguiente;
 
     public NodoLC(String dato) {
         this.dato = dato;
