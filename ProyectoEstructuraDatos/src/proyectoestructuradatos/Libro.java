@@ -1,11 +1,10 @@
-
 package proyectoestructuradatos;
 
 public class Libro {
-    
-   private String titulo; 
-   private String autor; 
-   private int Id; 
+
+    private String titulo;
+    private String autor;
+    private int Id;
 
     public Libro(String titulo, String autor, int Id) {
         this.titulo = titulo;
@@ -39,6 +38,6 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro: " + "titulo: " + titulo + " autor: " + autor + " Id: " + Id ;   
+        return "Libro: " + "titulo: " + titulo + " autor: " + autor + " Id: " + Id;
     }
 }
