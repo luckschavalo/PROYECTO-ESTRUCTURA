@@ -1,6 +1,7 @@
 package proyectoestructuradatos;
 
 public class PosicionR {
+
     private int fila;
     private int columna;
     private String nombreLibro;
@@ -29,6 +30,6 @@ public class PosicionR {
 
     @Override
     public String toString() {
-        return "Posicion: " + "fila: " + fila + " columna: "  + columna + " libro: " + nombreLibro ;
+        return "Posicion: " + "fila: " + fila + " columna: " + columna + " libro: " + nombreLibro;
     }
 }
