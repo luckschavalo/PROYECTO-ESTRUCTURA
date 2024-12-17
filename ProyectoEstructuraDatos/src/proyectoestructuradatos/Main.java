@@ -82,6 +82,25 @@ public class Main {
         a.imprimirOrden();
         System.out.println("\n");
 
+        System.out.println("**BUSCAR LIBRO EXISTENTE**");
+        String tituloBuscar = "La Odisea";
+        Libro libroEncontrar = a.buscar(tituloBuscar);
+        if(libroEncontrar != null){
+            System.out.println("Libro Encontrado: " + libroEncontrar);
+        }else{
+            System.out.println("Libro No Encontrado");
+        }
+        System.out.println("\n");
+
+        System.out.println("**BUSCAR LIBRO NO EXISTENTE**");
+        String TituloNoExiste = "Berserk";
+        Libro libroNoEncontrar = a.buscar(TituloNoExiste);
+        if (libroNoEncontrar != null){ 
+        }else{
+            System.out.println("Libro No Encontrado: " + TituloNoExiste);
+        }
+        System.out.println("\n");
+
         // Aca se pone el nombre del libro que se desea buscar
         String libroBuscado = "El Principito";
         PosicionR resultadoBusqueda = busqueda.buscarLibroRecursivo(posiciones, libroBuscado, 0);
