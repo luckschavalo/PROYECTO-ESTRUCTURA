@@ -1,9 +1,8 @@
-
 package proyectoestructuradatos;
 
-
 class ColaReservas {
-   private NodoC frente;
+
+    private NodoC frente;
     private NodoC ultimo;
 
     public ColaReservas() {
@@ -13,7 +12,7 @@ class ColaReservas {
 
     public void encolar(String libro) {
         NodoC nuevoNodo = new NodoC(libro);
-        
+
         if (frente == null) {
             frente = nuevoNodo;
             ultimo = nuevoNodo;
@@ -31,11 +30,11 @@ class ColaReservas {
 
         String libroAtendido = frente.getLibro();
         frente = frente.getAtras();
-        
-        if (frente == null) { 
-            ultimo = null; 
+
+        if (frente == null) {
+            ultimo = null;
         }
-        
+
         return libroAtendido;
     }
 
