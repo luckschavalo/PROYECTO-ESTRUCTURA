@@ -72,6 +72,16 @@ public class Main {
 
         BusquedaRecursiva busqueda = new BusquedaRecursiva();
 
+        ArbolBinario a = new ArbolBinario();
+        a.insertar(new Libro("La Odisea","Homero",112830983));
+        a.insertar(new Libro("Los Hornos de Hitler","Olga Lengyel",289381083));
+        a.insertar(new Libro("Habitos Atomicos","James Clear",345381083));
+        a.insertar(new Libro("Hamlet","William Shakespeare",567381083));
+        
+        System.out.println("Libros en Orden: ");
+        a.imprimirOrden();
+        System.out.println("\n");
+
         // Aca se pone el nombre del libro que se desea buscar
         String libroBuscado = "El Principito";
         PosicionR resultadoBusqueda = busqueda.buscarLibroRecursivo(posiciones, libroBuscado, 0);
